@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from "motion/react"
+import { motion, useScroll, useSpring, useTransform } from "motion/react"
 import { useRef } from "react"
 
 export default function Header() {
@@ -21,12 +21,12 @@ export default function Header() {
                     */}
                     <motion.div className="position-absolute start-0 end-0 m-auto top-0 bottom-0 align-content-center text-center" style={{ y: scrollTransform }}>
                         <motion.svg height="100%" xmlns="http://www.w3.org/2000/svg" className="w-75 z-3 start-0 end-0 m-auto position-absolute">
-                            <motion.rect width="95%" height="100%" x="10" y="10" rx="20" ry="20"
-                                style={{ fill: "none", stroke: "black", strokeWidth: 5, opacity: 1, pathLength: scrollYProgress }} />
+                            <motion.rect width="95%" height="100%" x="10" y="10" rx="20" ry="20" pathLength={0}
+                                style={{ fill: "none", stroke: "black", strokeWidth: 5, opacity: 1, pathLength: useSpring(scrollYProgress,{damping:30}) }} />
                         </motion.svg>
-                        <motion.h1 className="text-dark display-1 fw-bolder mt-3 w-75 m-auto z-3" style={{ scale: scrollTransformH1 }}>Welcome to Dario Web</motion.h1>
+                        <motion.h1 className="text-dark display-1 fw-bolder mt-3 w-75 m-auto z-3" style={{ scale: useSpring(scrollTransformH1)  }}>Welcome to Dario Web</motion.h1>
 
-                        <motion.img src="/abstractLowRes.png" className="w-25 mt-5 pt-5" style={{ y: scrollTransformImg, scale: scrollTransformImgRotate }}></motion.img>
+                        <motion.img src="/abstractLowRes.png" className="w-25 mt-5 pt-5" style={{ y: useSpring(scrollTransformImg), scale: useSpring(scrollTransformImgRotate) }}></motion.img>
                     </motion.div>
 
                 </div>

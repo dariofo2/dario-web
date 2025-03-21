@@ -4,6 +4,8 @@ import Footer from "@/components/footer";
 import Projects from "@/components/projects/projects";
 import NavBar from "@/components/navbar";
 import Header from "@/components/header";
+import AboutMe from "@/components/aboutMe";
+import Tecnologias from "@/components/tecnologias/tecnologias";
 
 export default function Home() {
   const projects:Project[]= [
@@ -40,7 +42,9 @@ export default function Home() {
     <div>
       <NavBar />
       <Header />
+      <AboutMe />
       <Projects projects={projects} />
+      <Tecnologias />
       <Footer />
     </div>
   );
