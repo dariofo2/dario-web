@@ -2,8 +2,8 @@ import { motion } from "motion/react";
 
 export default function NavBar () {
     return (
-        <div>
-            <div className="navbar navbar-dark navbar-expand-md bg-dark">
+        <div className="position-fixed z-3">
+            <div className="navbar navbar-dark top-0 navbar-expand-md ">
                 <div className="navbar-brand">
                     Darío
                 </div>
@@ -13,7 +13,7 @@ export default function NavBar () {
                 <div id="navBarCollapse" className="navbar-collapse collapse">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link">Proyectos</a>
+                            <a className="nav-link text-white">Proyectos</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link">Sobre Mí</a>
