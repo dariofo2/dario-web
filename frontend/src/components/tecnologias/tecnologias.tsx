@@ -22,15 +22,16 @@ export default function Tecnologias(props: PropsTecnologias) {
     }
     return (
         <div className="bg-black" style={{ height: "100vh" }}>
+            
             <div className="container h-100">
-                <motion.h1 className="display-2  pt-5 text-white text-center" variants={appear} initial={"hidden"} whileInView={"visible"}>Tecnologías</motion.h1>
+            <motion.h1 className="proximanovablack_aad6772e-module__21-Dpq__className text-warning display-2 pt-5 text-center" variants={appear} initial={"hidden"} whileInView={"visible"}>TECNOLOGÍAS</motion.h1>    
                 <hr className="text-white"></hr>
-                <motion.div className="row h-75 align-content-center align-items-stretch justify-content-around " variants={appear} initial={"hidden"} whileInView={"visible"}>
+                <motion.div className="row h-75 align-content-center align-items-center justify-content-around " variants={appear} initial={"hidden"} whileInView={"visible"}>
                     <motion.div className="col-auto" variants={appear}>
-                        <div className="p-3 text-white">
-                            <h2>Lenguajes</h2>
+                        <div className="p-3">
+                            <h2 className="text-white montserratblack_a2c7f6b5-module__vidL4G__className">Lenguajes</h2>
                             <hr className="text-white"></hr>
-                            <ul>
+                            <ul className="proximanova_1ffacc90-module__hrzBwa__className fw-bold text-white">
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>SQL</li>
@@ -46,9 +47,9 @@ export default function Tecnologias(props: PropsTecnologias) {
                     </motion.div>
                     <motion.div className="col-auto" variants={appear}>
                         <div className="p-3 text-white">
-                            <h2>FrameWorks</h2>
+                            <h2 className="montserratblack_a2c7f6b5-module__vidL4G__className">FrameWorks</h2>
                             <hr className="text-white"></hr>
-                            <ul>
+                            <ul className="proximanova_1ffacc90-module__hrzBwa__className fw-bold">
                                 <li>React</li>
                                 <li>React Native</li>
                                 <li>Next.Js</li>
