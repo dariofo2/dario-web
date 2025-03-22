@@ -24,7 +24,7 @@ export default function Header() {
                             <motion.rect width="95%" height="100%" x="10" y="10" rx="20" ry="20" pathLength={0}
                                 style={{ fill: "none", stroke: "black", strokeWidth: 5, opacity: 1, pathLength: useSpring(scrollYProgress,{damping:30}) }} />
                         </motion.svg>
-                        <motion.h1 className="proximanovablack_aad6772e-module__21-Dpq__className text-black display-1 mt-3 w-75 m-auto z-3" style={{ scale: useSpring(scrollTransformH1)}}>WELCOME TO DARIO WEB</motion.h1>
+                        <motion.h1 className="proximaNovaBlack text-black display-1 mt-3 w-75 m-auto z-3" style={{ scale: useSpring(scrollTransformH1)}}>WELCOME TO DARIO WEB</motion.h1>
 
                         <motion.img src="/abstractLowRes.png" className="w-25 mt-5 pt-5" style={{ y: useSpring(scrollTransformImg), scale: useSpring(scrollTransformImgRotate) }}></motion.img>
                     </motion.div>

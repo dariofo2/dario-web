@@ -11,17 +11,17 @@ a.nav-link:hover {
 }
 
 .proximaNova {
-    font-family: --var();
+    font-family: var(--proximaNova);
 }
 
 .proximaNovaBlack {
-
+    font-family: var(--proximaNovaBlack);
 }
 
 .montserrat {
-
+    font-family: var(--montserrat);
 }
 
 .montserratBlack {
-
+    font-family: var(--montserratBlack);
 }

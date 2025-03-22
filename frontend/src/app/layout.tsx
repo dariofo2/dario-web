@@ -5,6 +5,8 @@ import localFont from 'next/font/local'
 import "@/components/style.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css"
+import BootstrapClient from "@/components/bootstrapClient";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -23,6 +25,11 @@ const roboto = Roboto({
 const montserratBlack = localFont({
   src: "../fonts/Montserrat/static/Montserrat-Black.ttf",
   variable: "--montserratBlack"
+})
+
+const montserrat = localFont({
+  src: "../fonts/Montserrat/static/Montserrat-Regular.ttf",
+  variable: "--montserrat"
 })
 
 const proximaNovaBlack = localFont({
@@ -47,7 +54,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} ${montserratBlack.variable} ${proximaNovaBlack.variable} ${proximaNova.variable}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} ${montserrat.variable} ${montserratBlack.variable} ${proximaNovaBlack.variable} ${proximaNova.variable}`}>
+        <BootstrapClient />
         {children}
       </body>
     </html>

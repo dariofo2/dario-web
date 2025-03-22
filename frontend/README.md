@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Deploy on GitHub Pages, or Change "_next" folder name to "next"
+
+Use This command on out/
+grep -rl '/_next' * | xargs sed -i 's|/_next|/next|g'
+
 ## Getting Started
 
 First, run the development server:

@@ -22,7 +22,7 @@ export default function Projects(props: PropProjects) {
         <div>
             <div id="projects" ref={scrollRef} className="" style={{ height: "300vh" }} >
                 <div className="position-sticky top-0 overflow-hidden bg-black">
-                    <h1 className="montserratblack_a2c7f6b5-module__vidL4G__className text-bg-warning display-3 text-center position-absolute w-100 z-3 mt-5">PROYECTOS</h1>
+                    <h1 className="montserratBlack text-bg-warning display-3 text-center position-absolute w-100 z-3 mt-5">PROYECTOS</h1>
                     <motion.div className="position-absolute bg-success z-3 w-75 m-auto start-0 end-0" style={{ bottom: 20, height: 5, scaleX: useSpring(scrollYProgress) }} />
                     <motion.div className="d-flex" style={{ x: widthScroll }}>
                         {projects}

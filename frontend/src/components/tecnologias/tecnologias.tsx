@@ -5,33 +5,32 @@ class PropsTecnologias {
     lenguajes?: string[]
 }
 export default function Tecnologias(props: PropsTecnologias) {
-    const appear={
-        hidden:{
-            x:-100,
-            opacity:0
+    const appear = {
+        hidden: {
+            x: -100,
+            opacity: 0
         },
-        visible:{
-            x:0,
-            opacity:1,
-            transition:{
+        visible: {
+            x: 0,
+            opacity: 1,
+            transition: {
                 type: "spring",
-                staggerChildren:0.5,
-                delayChildren:0.5
+                staggerChildren: 0.5,
+                delayChildren: 0.5
             }
         }
     }
     return (
-        <div id="tecnologias" className="bg-black" style={{ height: "100vh" }}>
-            
+        <div id="tecnologias" className="bg-black" style={{ height: "93vh" }}>
             <div className="container h-100">
-            <motion.h1 className="proximanovablack_aad6772e-module__21-Dpq__className text-warning display-2 pt-5 text-center" variants={appear} initial={"hidden"} whileInView={"visible"}>TECNOLOGÍAS</motion.h1>    
+                <motion.h1 className="proximaNovaBlack text-warning display-2 pt-5 text-center" variants={appear} initial={"hidden"} whileInView={"visible"}>TECNOLOGÍAS</motion.h1>
                 <hr className="text-white"></hr>
                 <motion.div className="row h-75 align-content-center align-items-center justify-content-around " variants={appear} initial={"hidden"} whileInView={"visible"}>
                     <motion.div className="col-auto" variants={appear}>
                         <div className="p-3">
-                            <h2 className="text-white montserratblack_a2c7f6b5-module__vidL4G__className">Lenguajes</h2>
+                            <h2 className="text-white montserratBlack">Lenguajes</h2>
                             <hr className="text-white"></hr>
-                            <ul className="proximanova_1ffacc90-module__hrzBwa__className fw-bold text-white">
+                            <ul className="montserrat fw-bold text-white">
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>SQL</li>
@@ -47,9 +46,9 @@ export default function Tecnologias(props: PropsTecnologias) {
                     </motion.div>
                     <motion.div className="col-auto" variants={appear}>
                         <div className="p-3 text-white">
-                            <h2 className="montserratblack_a2c7f6b5-module__vidL4G__className">FrameWorks</h2>
+                            <h2 className="montserratBlack">FrameWorks</h2>
                             <hr className="text-white"></hr>
-                            <ul className="proximanova_1ffacc90-module__hrzBwa__className fw-bold">
+                            <ul className="montserrat fw-bold text-white">
                                 <li>React</li>
                                 <li>React Native</li>
                                 <li>Next.Js</li>
