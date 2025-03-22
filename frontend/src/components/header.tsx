@@ -12,7 +12,7 @@ export default function Header() {
     //const scrollLeftImage= useTransform(scrollYProgress,[0,1],[-230,-900]);
     //const scrollRightImage= useTransform(scrollYProgress,[0,1],[-240,400]);
     return (
-        <div className="" ref={refContainer} style={{ height: "200vh" }}>
+        <div id="home" className="" ref={refContainer} style={{ height: "200vh" }}>
             <div className="position-sticky top-0 overflow-hidden" style={{ height: "100vh", background: "linear-gradient(to bottom,white,black)" }}>
                 <div className="position-relative" style={{ height: "100vh" }}>
                     {/*  

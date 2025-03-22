@@ -2,6 +2,14 @@
 scroll-behavior: smooth;
 }
 
+a.nav-link {
+    color:rgb(255, 187, 0);
+}
+
+a.nav-link:hover {
+    color:white;
+}
+
 .proximaNova {
     font-family: --var();
 }

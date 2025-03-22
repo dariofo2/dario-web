@@ -1,7 +1,7 @@
 export default function Footer () {
     return (
-        <footer>
-            Alejandro Darío F.O. | Todos los derechos Reservados
+        <footer className="bg-black text-white text-center p-3">
+            <h4>Alejandro Darío F.O. | Todos los derechos Reservados</h4>
         </footer>
     );
 }

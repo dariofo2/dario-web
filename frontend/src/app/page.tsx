@@ -40,8 +40,8 @@ export default function Home() {
   }
   return (
     <div>
-      <NavBar />
       <Header />
+      <NavBar />
       <AboutMe />
       <Projects projects={projects} />
       <Tecnologias />

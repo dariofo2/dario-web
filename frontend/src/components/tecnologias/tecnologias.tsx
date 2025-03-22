@@ -21,7 +21,7 @@ export default function Tecnologias(props: PropsTecnologias) {
         }
     }
     return (
-        <div className="bg-black" style={{ height: "100vh" }}>
+        <div id="tecnologias" className="bg-black" style={{ height: "100vh" }}>
             
             <div className="container h-100">
             <motion.h1 className="proximanovablack_aad6772e-module__21-Dpq__className text-warning display-2 pt-5 text-center" variants={appear} initial={"hidden"} whileInView={"visible"}>TECNOLOGÍAS</motion.h1>    

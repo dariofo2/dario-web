@@ -23,7 +23,7 @@ export default function ProjectElement(props: ProjectElementProps) {
     }
     return (
         <div className="d-flex align-items-center justify-content-center bg-black text-success" style={{minWidth:"100vw", height: "100vh" }}>
-            <motion.div className="w-50 text-center" variants={appear} initial={"hidden"} whileInView={"visible"}>
+            <motion.div className="w-50 text-center" variants={appear} initial={"hidden"} whileInView={"visible"} viewport={{ once: true }}>
                 <h1 className="montserratblack_a2c7f6b5-module__vidL4G__className text-warning">{props.project?.name}</h1>
                 <p className="proximanova_1ffacc90-module__hrzBwa__className text-white">{props.project?.description}</p>
             </motion.div>
